@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Insert Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Insert Book Details</h1>
+        <form id="bookForm" action="Book_Insert.php" method="post" onsubmit="return validateForm()">
+            <label for="book_id">Book ID:</label>
+            <input type="text" id="book_id" name="book_id" required><br><br>
+
+            <label for="book_name">Name of the Book:</label>
+            <input type="text" id="book_name" name="book_name" required><br><br>
+
+            <label for="author_name">Author Name:</label>
+            <input type="text" id="author_name" name="author_name" required><br><br>
+
+            <label for="year_of_publication">Year of Publication:</label>
+            <input type="number" id="year_of_publication" name="year_of_publication" required><br><br>
+
+            <input type="submit" value="Insert Book">
+        </form>
+    </div>
+</body>
+</html>
